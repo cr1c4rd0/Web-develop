@@ -136,3 +136,80 @@ Encierra el contenido propiamente dicho del sitio.
 ~~~
 <html>
 ~~~
+Etiqueta inicial, que define que el documentop está bajo el estándar de HTML. Abre y cierra, por lo tanto es fundamental no olvidar la etiqueta
+~~~
+</html>
+~~~
+al finalizar el documento, pues sino no cargará correctamente el contenido de mi sitio.
+
+~~~
+<title>
+~~~
+La etiqueta title define el título de la página, el cual será visualizado en la solapa del navegador.
+
+~~~
+<meta>
+~~~
+Se utiliza para añadir información sobre la página (ya sean palabras clave, el autor, la descripción del sitio, etcétera), la cual pueden valerse los buscadores. También puede definir el idioma y la codificación en la cual está escrita la página.
+
+## DOCTYPE
+Cuando escribes tu documento HTML, lo primero que debes hacer es escribir el DOCTYPE, el cual declara el tipo de documento. Es decir, sirve para indicar que tu documento está escrito seguiendo la estructura determinada por un DTD concreto. Un DTD es la definición del tipo de documento.
+~~~
+<!DOCTYPE html>
+~~~
+
+## Tipos de etiquetas: grupo general
+Todas las etiquetas que van dentro del Body se dividen en dos grupos:
+- **Elementos de bloque:** son aquellos que, sin ser modificadores por CSS, ocupan el 100% del ancho del contenedor y se mostrarán uno abajo del otro.
+- **Elementos de línea:** sólo ocupan el ancho que diga el contenido, y se verán uno al lado del otro.
+
+## Tipos de etiquetas: contenedores
+Tenemos una forma de organizar mejor nuestro html. Para eso, debemos pensar en que nuestro contenido (texto e imágenes) tienen que estar contenidas en un contenedor.
+
+Es por eso que tenemos el contenedor por excelencia que es el Div y su hermano, el Span.
+
+El Div es un contenedor en bloque mientras que el span es un contenedor en línea muy útil para el trabajo con textos.
+~~~
+<!-- apertura contenedor padre --~~~
+<div>
+	<h2>Hola planeta</h2>
+</div>
+<!-- cierre contenedor padre -->
+~~~
+En el ejemplo se pueden ver el uso de comentarios y el uso de un contenedor div para trabajar el contenido h2
+
+~~~
+<h1>
+	Elemento de Bloque
+</h1>
+<h2>
+	Elemento de Bloque
+</h2>
+~~~
+**H1 a H6 de bloque:** un encabezado es, semánticamente hablando, el texto que encabeza o titula el contenido que sigue. Se puede tratar de un artículo, un texto o una sección del documento que estamos viendo.
+
+**Existen 6 niveles:** esta jerarquía se debe respertar en cada documento HTML que fomr parte del sitio web.
+
+## Etiquetas HTML
+~~~
+<p></p>
+<br/> (de bloque)
+<em> (de línea)
+<strong> (de línea)
+<div> (de bloque)
+<span> (de linea)
+~~~
+
+## HTML5
+HTML5 incorpora **etiquetas semánticas** que no sólo generan estructura, sino que también definen su contenido.
+~~~
+<header</header>
+<nav></nav>
+<section>
+	<article>
+	</article>
+</section>
+<aside>
+</aside>
+<footer></footer>
+~~~
